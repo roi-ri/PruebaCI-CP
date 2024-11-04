@@ -16,6 +16,7 @@ jobs:
       
       - name: Build and run tests
         run: |
+          cd CalculatorTests       
           mkdir build
           cd build
           cmake ..
@@ -32,3 +33,4 @@ jobs:
 
       - name: Deploy to production
         run: echo "Deploying to production server"
+
